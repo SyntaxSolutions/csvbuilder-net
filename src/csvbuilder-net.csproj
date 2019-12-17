@@ -4,6 +4,19 @@
     <TargetFramework>net452</TargetFramework>
     <RootNamespace>SyntaxSolutions.CsvBuilder</RootNamespace>
     <AssemblyName>SyntaxSolutions.CsvBuilder</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Syntax Solutions Ltd</Authors>
+    <Description>A simple .Net library used to format data into comma-separated values (CSV)</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/SyntaxSolutions/csvbuilder-net</PackageProjectUrl>
+    <Product>CsvBuilder</Product>
+    <NeutralLanguage>en</NeutralLanguage>
+    <RepositoryUrl>https://github.com/SyntaxSolutions/csvbuilder-net</RepositoryUrl>
+    <Copyright>Syntax Solutions Ltd</Copyright>
+    <PackageTags>c#,.Net,CSV</PackageTags>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/10263982?s=400&amp;v=4</PackageIconUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageReleaseNotes>A simple .Net library used to format data into comma-separated values (CSV)</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
