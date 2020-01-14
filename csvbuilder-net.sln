@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csvbuilder-net", "src\csvbuilder-net.csproj", "{F2003CC4-A94C-49C7-832F-B6D558015360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csvbuilder-net", "src\csvbuilder-net.csproj", "{F2003CC4-A94C-49C7-832F-B6D558015360}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{6973E143-3140-40D8-850B-86F1CF7DFE05}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
