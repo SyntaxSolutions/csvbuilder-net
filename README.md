@@ -1,5 +1,14 @@
-# csvbuilder-net
+# CSV Builder for .Net
 A simple .Net library used to format data into comma-separated values (CSV)
+
+## Installation
+
+```sh
+PM> Install-Package SyntaxSolutions.CsvBuilder
+```
+
+## Example
+
 ```c#
 using SyntaxSolutions.CsvBuilder;
 
