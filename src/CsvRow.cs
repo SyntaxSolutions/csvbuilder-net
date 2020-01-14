@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace SyntaxSolutions.CsvBuilder
 {
@@ -18,7 +16,7 @@ namespace SyntaxSolutions.CsvBuilder
         }
 
         /// <summary>
-        /// Add cell text
+        /// Add text to row cell 
         /// </summary>
         /// <param name="text"></param>
         public void AddCell(string text)

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -20,7 +19,7 @@ namespace SyntaxSolutions.CsvBuilder
             this.contentBuilder = new StringBuilder();
             this.headerBuilder = new StringBuilder();
 
-            // add a Byte Order Marker to the data stream to ensure Excel opens the CSV file with UTF8 encoding.
+            // add a Byte Order Marker to the data stream to ensure MS Excel opens the CSV file with UTF8 encoding.
             this.headerBuilder.Append('\uFEFF');
         }
 
@@ -42,15 +41,7 @@ namespace SyntaxSolutions.CsvBuilder
         }
 
         /// <summary>
-        /// Add a blank row
-        /// </summary>
-        public void AddRow()
-        {
-            this.AddRow(null);
-        }
-
-        /// <summary>
-        /// Add CSVRow
+        /// Add a CSVRow
         /// </summary>
         /// <param name="text"></param>
         public void AddRow(CsvRow row)
