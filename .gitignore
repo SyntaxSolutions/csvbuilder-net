@@ -2,3 +2,7 @@
 /src/obj
 /src/csvbuilder-net.csproj.user
 /.vs
+/packages
+/tests/obj
+/tests/bin
+/tests/csvbuilder-net-tests.csproj.user
