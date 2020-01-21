@@ -3,6 +3,8 @@ A simple .Net library used to format data into comma-separated values (CSV).
 
 ## Features
 
+1. UTF-8 encoded. 
+1. Excel compatible.
 
 ## Installation
 
@@ -11,8 +13,6 @@ PM> Install-Package SyntaxSolutions.CsvBuilder
 ```
 
 ## Example
-1. UTF-8 encoded. 
-1. Excel compatible.
 
 ```c#
 using SyntaxSolutions.CsvBuilder;
