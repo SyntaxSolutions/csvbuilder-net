@@ -18,12 +18,18 @@ namespace csvbuilder_net_tests
             headers.AddCell("Header 1");
             headers.AddCell("Header 2");
             headers.AddCell("Header 3");
+            headers.AddCell("Header 4");
+            headers.AddCell(" Header 5");
+            headers.AddCell("Header 6 ");
             builder.AddHeaders(headers);
 
             var row = new CsvRow();
             row.AddCell("Cell 1 \"with quotes\"");
             row.AddCell("Cell 2 with line break 1\r\nline break 2");
             row.AddCell("Cell 3");
+            row.AddCell("Cell, with, commas");
+            row.AddCell(" leading space");
+            row.AddCell("trailing space ");
             builder.AddRow(row);
 
             byte[] actualBytes = builder.GetBytes();
