@@ -21,8 +21,8 @@ namespace csvbuilder_net_tests
             builder.AddHeaders(headers);
 
             var row = new CsvRow();
-            row.AddCell("Cell 1");
-            row.AddCell("Cell 2");
+            row.AddCell("Cell 1 \"with quotes\"");
+            row.AddCell("Cell 2 with line break 1\r\nline break 2");
             row.AddCell("Cell 3");
             builder.AddRow(row);
 
@@ -30,7 +30,9 @@ namespace csvbuilder_net_tests
             byte[] expectedBytes = System.IO.File.ReadAllBytes("TestBasicHeadersAndRows_Expected.csv");
 
             // ensure the two arrays are the same length 
-            Assert.AreEqual(expectedBytes.Length, actualBytes.Length);
+            Assert.AreEqual(expectedBytes.Length, actualBytes.Length,
+                String.Format("Total byte count does not match Expected: '{0}', Actual: '{1}' | {2}", expectedBytes.Length, (actualBytes.Length), BitConverter.ToString(actualBytes))
+            );
 
             // ensure the bytes are identical 
             for (int i = 0; i < expectedBytes.Length; i++)
@@ -39,7 +41,7 @@ namespace csvbuilder_net_tests
                 byte actual = actualBytes[i];
 
                 Assert.IsTrue(expected == actual,
-                    String.Format("Expected: '{0}', Actual: '{1}' at offset {2}.", (byte)expected, (byte)actual, i)
+                    String.Format("Expected: '{0}', Actual: '{1}' at offset {2} | {3}", BitConverter.ToString(new byte[] { (byte)expected }), BitConverter.ToString(new byte[] { (byte)actual }), i, BitConverter.ToString(actualBytes))
                 );
             }
         }

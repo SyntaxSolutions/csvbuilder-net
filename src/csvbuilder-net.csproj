@@ -17,6 +17,8 @@
     <PackageIconUrl>https://avatars2.githubusercontent.com/u/10263982?s=400&amp;v=4</PackageIconUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageReleaseNotes>A simple .Net library used to format data into comma-separated values (CSV)</PackageReleaseNotes>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
 
 </Project>

@@ -21,7 +21,8 @@ namespace SyntaxSolutions.CsvBuilder
         /// <param name="text"></param>
         public void AddCell(string text)
         {
-            this.Cells.Add(String.Format("\"{0}\"", text));
+            string formattedText = text.Replace("\"", "\"\"");
+            this.Cells.Add(String.Format("\"{0}\"", formattedText));
         }
     }
 }
