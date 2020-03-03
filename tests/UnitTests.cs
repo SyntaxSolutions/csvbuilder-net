@@ -21,6 +21,7 @@ namespace csvbuilder_net_tests
             headers.AddCell("Header 4");
             headers.AddCell(" Header 5");
             headers.AddCell("Header 6 ");
+            headers.AddCell("Header 7");
             builder.AddHeaders(headers);
 
             var row = new CsvRow();
@@ -30,6 +31,7 @@ namespace csvbuilder_net_tests
             row.AddCell("Cell, with, commas");
             row.AddCell(" leading space");
             row.AddCell("trailing space ");
+            row.AddCell(null);
             builder.AddRow(row);
 
             byte[] actualBytes = builder.GetBytes();

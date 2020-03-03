@@ -17,9 +17,9 @@
     <PackageIconUrl></PackageIconUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageReleaseNotes>A simple .Net library used to format data into comma-separated values (CSV)</PackageReleaseNotes>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
-    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <Version>1.0.2</Version>
     <PackageIcon>package-icon.png</PackageIcon>
   </PropertyGroup>
 
