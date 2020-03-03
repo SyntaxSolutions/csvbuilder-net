@@ -13,6 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{6973E143-314
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csvbuilder-net-tests", "tests\csvbuilder-net-tests.csproj", "{E4451790-74C6-4F00-96E6-B2AD4B4562B1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{3FF08FFF-4A78-460E-97ED-06504F772AED}"
+	ProjectSection(SolutionItems) = preProject
+		build\package-icon.png = build\package-icon.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6C4F3D80-0AB0-4387-9CAE-89C376A65E91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{052046C2-4197-4E26-99F3-278B859A294B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +39,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2003CC4-A94C-49C7-832F-B6D558015360} = {052046C2-4197-4E26-99F3-278B859A294B}
+		{E4451790-74C6-4F00-96E6-B2AD4B4562B1} = {6C4F3D80-0AB0-4387-9CAE-89C376A65E91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DC906360-97D5-4F78-9CF3-DAB8A399F989}

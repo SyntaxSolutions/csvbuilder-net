@@ -6,3 +6,4 @@
 /tests/obj
 /tests/bin
 /tests/csvbuilder-net-tests.csproj.user
+/src/Properties/PublishProfiles/FolderProfile.pubxml.user
