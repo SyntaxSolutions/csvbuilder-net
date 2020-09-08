@@ -53,5 +53,18 @@ namespace csvbuilder_net_tests
                 );
             }
         }
+
+        [TestMethod]
+        public void TestZeroHeadersAndRows()
+        {
+            var builder = new CsvBuilder();
+            byte[] actualBytes = builder.GetBytes();
+            int expectedByteLength = 0;
+
+            // ensure the two arrays are the same length 
+            Assert.AreEqual(expectedByteLength, actualBytes.Length,
+                String.Format("Total byte count does not match Expected: '{0}', Actual: '{1}' | {2}", expectedByteLength, (actualBytes.Length), BitConverter.ToString(actualBytes))
+            );
+        }
     }
 }

@@ -10,6 +10,7 @@ namespace SyntaxSolutions.CsvBuilder
         private StringBuilder contentBuilder;
         private string delimiter = ",";
         private string linebreak = "\r\n";
+        private char BOM = '\uFEFF';
 
         /// <summary>
         /// Create a new CsvBuilder
@@ -18,9 +19,6 @@ namespace SyntaxSolutions.CsvBuilder
         {
             this.contentBuilder = new StringBuilder();
             this.headerBuilder = new StringBuilder();
-
-            // add a Byte Order Marker to the data stream to ensure MS Excel opens the CSV file with UTF8 encoding.
-            this.headerBuilder.Append('\uFEFF');
         }
 
         /// <summary>
@@ -65,7 +63,14 @@ namespace SyntaxSolutions.CsvBuilder
         /// <returns></returns>
         public byte[] GetBytes()
         {
-            return Encoding.UTF8.GetBytes(this.headerBuilder.ToString() + this.contentBuilder.ToString());
+            string content = String.Empty;
+            if (this.headerBuilder.ToString().Length > 0 || this.contentBuilder.ToString().Length > 0)
+            {
+                // add a Byte Order Marker to the data stream to ensure MS Excel opens the CSV file with UTF8 encoding.
+                content = this.BOM + this.headerBuilder.ToString() + this.contentBuilder.ToString();
+            }
+
+            return Encoding.UTF8.GetBytes(content);
         }
 
         /// <summary>
