@@ -1,35 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace SyntaxSolutions.CsvBuilder
 {
     public class CsvRow
     {
-        public List<string> Cells { get; set; }
+        private List<string> _cells { get; set; }
+
+        /// <summary>
+        /// Get a list of cells
+        /// </summary>
+        internal ReadOnlyCollection<string> Cells
+        {
+            get { return this._cells.AsReadOnly(); }
+        }
 
         /// <summary>
         /// Create a new CsvRow
         /// </summary>
         public CsvRow()
         {
-            this.Cells = new List<string>();
+            this._cells = new List<string>();
         }
 
         /// <summary>
-        /// Add text to row cell 
+        /// Add a cell
         /// </summary>
-        /// <param name="text"></param>
-        public void AddCell(string text)
+        /// <param name="value">String value of the cell.</param>
+        public void AddCell(string value)
         {
             string formattedText;
 
-            if (String.IsNullOrEmpty(text))
+            if (String.IsNullOrEmpty(value))
             {
                 formattedText = string.Empty; 
             }
             else
             {
-                formattedText = text.Replace("\"", "\"\"");
+                formattedText = value.Replace("\"", "\"\"");
 
                 if (formattedText.Contains("\"")
                   || formattedText.Contains(",")
@@ -43,7 +52,7 @@ namespace SyntaxSolutions.CsvBuilder
                 }
             }
 
-            this.Cells.Add(formattedText);
+            this._cells.Add(formattedText);
         }
     }
 }
