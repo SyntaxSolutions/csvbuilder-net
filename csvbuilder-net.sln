@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29009.5
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csvbuilder-net", "src\csvbuilder-net.csproj", "{F2003CC4-A94C-49C7-832F-B6D558015360}"
 EndProject
@@ -11,16 +11,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{6973E143-314
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csvbuilder-net-tests", "tests\csvbuilder-net-tests.csproj", "{E4451790-74C6-4F00-96E6-B2AD4B4562B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestDotNetFramework", "tests\UnitTestDotNetFramework\UnitTestDotNetFramework.csproj", "{E4451790-74C6-4F00-96E6-B2AD4B4562B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{3FF08FFF-4A78-460E-97ED-06504F772AED}"
 	ProjectSection(SolutionItems) = preProject
+		build\build-package.bat = build\build-package.bat
 		build\package-icon.png = build\package-icon.png
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6C4F3D80-0AB0-4387-9CAE-89C376A65E91}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{052046C2-4197-4E26-99F3-278B859A294B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{48CE4AA5-84C6-461B-B020-BCFD586BFE64}"
+	ProjectSection(SolutionItems) = preProject
+		tests\Shared\TestBasicHeadersAndRows_Expected.csv = tests\Shared\TestBasicHeadersAndRows_Expected.csv
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestDotNet", "tests\UnitTestDotNet\UnitTestDotNet.csproj", "{855AF126-7A5F-4C56-A8D3-6463F531959B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +44,10 @@ Global
 		{E4451790-74C6-4F00-96E6-B2AD4B4562B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4451790-74C6-4F00-96E6-B2AD4B4562B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4451790-74C6-4F00-96E6-B2AD4B4562B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{855AF126-7A5F-4C56-A8D3-6463F531959B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855AF126-7A5F-4C56-A8D3-6463F531959B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855AF126-7A5F-4C56-A8D3-6463F531959B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855AF126-7A5F-4C56-A8D3-6463F531959B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +55,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F2003CC4-A94C-49C7-832F-B6D558015360} = {052046C2-4197-4E26-99F3-278B859A294B}
 		{E4451790-74C6-4F00-96E6-B2AD4B4562B1} = {6C4F3D80-0AB0-4387-9CAE-89C376A65E91}
+		{48CE4AA5-84C6-461B-B020-BCFD586BFE64} = {6C4F3D80-0AB0-4387-9CAE-89C376A65E91}
+		{855AF126-7A5F-4C56-A8D3-6463F531959B} = {6C4F3D80-0AB0-4387-9CAE-89C376A65E91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DC906360-97D5-4F78-9CF3-DAB8A399F989}

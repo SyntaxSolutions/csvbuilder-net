@@ -1,10 +1,9 @@
 ﻿using System;
+using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 using SyntaxSolutions.CsvBuilder;
 
-
-namespace csvbuilder_net_tests
+namespace UnitTestDotNetFramework
 {
     [TestClass]
     public class UnitTests
@@ -35,7 +34,8 @@ namespace csvbuilder_net_tests
             builder.AddRow(row);
 
             byte[] actualBytes = builder.GetBytes();
-            byte[] expectedBytes = System.IO.File.ReadAllBytes("TestBasicHeadersAndRows_Expected.csv");
+            var filePath = Directory.GetCurrentDirectory() + @"..\..\..\..\Shared\TestBasicHeadersAndRows_Expected.csv";
+            byte[] expectedBytes = System.IO.File.ReadAllBytes(filePath);
 
             // ensure the two arrays are the same length 
             Assert.AreEqual(expectedBytes.Length, actualBytes.Length,

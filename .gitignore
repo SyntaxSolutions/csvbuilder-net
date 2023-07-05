@@ -7,3 +7,11 @@
 /tests/bin
 /tests/csvbuilder-net-tests.csproj.user
 /src/Properties/PublishProfiles/FolderProfile.pubxml.user
+/tests/UnitTestDotNet/obj
+/tests/UnitTestDotNet/bin
+/tests/UnitTestDotNetFramework/obj
+/tests/UnitTestDotNetFramework/bin
+/src/Properties/PublishProfiles/PublishDotNetFramework.pubxml.user
+/build/Package
+/tests/UnitTestDotNetFramework/UnitTestDotNetFramework.csproj.user
+/src/Properties/PublishProfiles/PublishDotNet.pubxml.user
