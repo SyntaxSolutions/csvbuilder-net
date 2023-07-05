@@ -4,6 +4,9 @@ using System.Text;
 
 namespace SyntaxSolutions.CsvBuilder
 {
+    /// <summary>
+    /// Build CSV formatted data
+    /// </summary>
     public class CsvBuilder
     {
         private StringBuilder _headerBuilder;

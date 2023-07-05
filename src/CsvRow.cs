@@ -4,6 +4,9 @@ using System.Collections.ObjectModel;
 
 namespace SyntaxSolutions.CsvBuilder
 {
+    /// <summary>
+    /// A row of cells
+    /// </summary>
     public class CsvRow
     {
         private List<string> _cells { get; set; }
