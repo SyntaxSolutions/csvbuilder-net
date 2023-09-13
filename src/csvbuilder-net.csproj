@@ -12,14 +12,14 @@
     <Product>CsvBuilder</Product>
     <NeutralLanguage>en</NeutralLanguage>
     <RepositoryUrl>https://github.com/SyntaxSolutions/csvbuilder-net</RepositoryUrl>
-    <Copyright>Syntax Solutions Ltd</Copyright>
+    <Copyright>© Syntax Solutions Ltd. All rights reserved.</Copyright>
     <PackageTags>c#,.Net,CSV</PackageTags>
     <PackageIconUrl></PackageIconUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageReleaseNotes>A simple .Net library used to format data into comma-separated values (CSV)</PackageReleaseNotes>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <FileVersion>1.1.0.0</FileVersion>
-    <Version>1.1.0</Version>
+    <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <FileVersion>1.1.1.0</FileVersion>
+    <Version>1.1.1</Version>
     <PackageIcon>package-icon.png</PackageIcon>
     <Title>CSV Builder</Title>
     <PackageReadmeFile>README.md</PackageReadmeFile>
