@@ -6,7 +6,7 @@ A simple .Net library used to format data into comma-separated values (CSV).
 1. RFC 4180 standard compliant 
 1. UTF-8 encoded. 
 1. Excel compatible.
-1. Compatible with frameworks: net6.0, net452
+1. Compatible with frameworks: .NET Standard 2.0, .NET Framework 4.0
 
 ## Installation
 
